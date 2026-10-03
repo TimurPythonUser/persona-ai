@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "next typegen && tsc --noEmit",
     "placeholders": "node scripts/placeholders.mjs",
     "images": "node scripts/images.mjs",
     "og": "node scripts/og.mjs",
