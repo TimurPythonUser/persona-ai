@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# playwright screenshots
+.playwright-mcp
+
+# исходники сгенерированных картинок (в проект идут сжатые webp из public/bloggers)
+/Avatars_and_posts/

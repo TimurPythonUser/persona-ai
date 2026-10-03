@@ -80,9 +80,15 @@ for (const b of bloggers) {
   for (const f of files) {
     const out = path.join(dir, `${f.name}.webp`);
     if (!force && (await exists(out))) continue;
-    await sharp(Buffer.from(svg(b, f))).webp({ quality: 82 }).toFile(out);
+    await sharp(Buffer.from(svg(b, f)))
+      .webp({ quality: 82 })
+      .toFile(out);
     created++;
     console.log("✓", out);
   }
 }
-console.log(created ? `Готово: ${created} файлов.` : "Все картинки уже на месте (используй --force, чтобы перегенерировать).");
+console.log(
+  created
+    ? `Готово: ${created} файлов.`
+    : "Все картинки уже на месте (используй --force, чтобы перегенерировать).",
+);
