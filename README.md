@@ -4,7 +4,7 @@ Mobile-first лендинг-прототип продукта с виртуал�
 профиль в виде bottom sheet с лентой постов и демо-чатом, переход в Telegram.
 Без бэкенда: все данные — моки, страница целиком статическая (SSG).
 
-**Демо:** _ссылка появится после деплоя на Vercel_
+**Демо:** https://persona-ai-mauve.vercel.app
 
 | Мобилка (390px) | | | |
 |---|---|---|---|
@@ -50,14 +50,14 @@ Mobile-first лендинг-прототип продукта с виртуал�
 
 ## Результаты проверки
 
-Lighthouse 13 на production-сборке (`next start`, локально):
+Lighthouse 13 по боевому деплою на Vercel:
 
 | | Performance | Accessibility | Best Practices | SEO |
 |---|---|---|---|---|
-| Mobile | 92 | 100 | 100 | 100 |
+| Mobile | 97 | 100 | 100 | 100 |
 | Desktop | 100 | 100 | 100 | 100 |
 
-CLS = 0, TBT ≈ 50 мс. Вёрстка проверена Playwright на 360, 390, 430 и 1440px: горизонтального скролла нет.
+Mobile: LCP 2.4 s, TBT ≈ 90 мс, CLS = 0. Вёрстка проверена Playwright на 360, 390, 430 и 1440px: горизонтального скролла нет.
 
 ## Персонажи и нейросети
 
@@ -114,5 +114,6 @@ scripts/        placeholders.mjs, images.mjs, og.mjs
 
 ## Деплой на Vercel
 
-Проект деплоится без настроек: импортировать репозиторий на [vercel.com/new](https://vercel.com/new) или выполнить `npx vercel --prod`.
+Задеплоено на Vercel из этого репозитория: каждый пуш в `main` автоматически выкатывается на https://persona-ai-mauve.vercel.app.
+Для своего форка достаточно импортировать репозиторий на [vercel.com/new](https://vercel.com/new), настройки не нужны.
 Домен для canonical и Open Graph подставляется автоматически из `VERCEL_PROJECT_PRODUCTION_URL`.
