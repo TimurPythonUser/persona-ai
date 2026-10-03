@@ -123,7 +123,7 @@ export const bloggers: Blogger[] = [
     id: "dan",
     name: "Дэн Кросс",
     handle: "@dan.outdoors",
-    niche: "Спорт и travel",
+    niche: "Sports & travel",
     tagline: "Горы на рассвете, волна на закате, дорога между ними",
     bio: "27, полгода живу в кемпере. Сёрф, треккинг, сплитборд. Показываю маршруты, которых нет в путеводителях.",
     accentColor: "#fb923c",

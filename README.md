@@ -69,10 +69,10 @@ CLS = 0, TBT ≈ 50 мс. Вёрстка проверена Playwright на 360,
 
 | id | Персонаж | Ниша | Акцент |
 |---|---|---|---|
-| `mark` | Марк Ривер, @mark.builds | Tech & AI, фаундер | синий / циан |
-| `dan` | Дэн Кросс, @dan.outdoors | спорт и путешествия | оранжевый |
-| `alice` | Алиса Морен, @alice.mode | fashion | розовый / фуксия |
-| `miya` | Мия Сато, @miya.daily | lifestyle & wellness | мятный |
+| `mark` | Марк Ривер, @mark.builds | Tech & AI | синий / циан |
+| `dan` | Дэн Кросс, @dan.outdoors | Sports & travel | оранжевый |
+| `alice` | Алиса Морен, @alice.mode | Fashion | розовый / фуксия |
+| `miya` | Мия Сато, @miya.daily | Lifestyle & wellness | мятный |
 
 ## Запуск локально
 
